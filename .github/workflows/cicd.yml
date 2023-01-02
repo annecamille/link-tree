@@ -26,3 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: ls -la
+    - run: cd ./App
+    - run: yarn install && ls -la
